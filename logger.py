@@ -11,7 +11,7 @@ ch = logging.StreamHandler()
 
 # Create formatter with process name, thread name, and other details
 formatter = logging.Formatter(
-    '%(asctime)s - %(processName)s - %(threadName)s - %(levelname)s - %(message)s'
+    '%(asctime)s - %(levelname)s - [P:%(processName)s(%(process)d)] - [T:%(threadName)s(%(thread)d)] - %(message)s'
 )
 
 # Add formatter to the console handler
